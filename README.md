@@ -1,0 +1,2 @@
+# MySQLsandbox
+useful SQL queries
