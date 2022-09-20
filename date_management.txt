@@ -1,0 +1,39 @@
+SELECT CURRENT_DATE,
+ SUBSTRING(CURRENT_DATE, 1, 4) AS `yyyy`,
+ SUBSTRING(CURRENT_DATE, 3, 2) AS `yy`,
+ SUBSTRING(CURRENT_DATE, 6, 2) AS `mm`,
+ SUBSTRING(CURRENT_DATE, 9, 2) AS `dd`;
++--------------+------+------+------+------+
+| CURRENT_DATE | yyyy | yy   | mm   | dd   |
++--------------+------+------+------+------+
+| 2022-09-20   | 2022 | 22   | 09   | 20   |
++--------------+------+------+------+------+
+
+
+SELECT CURRENT_TIME,
+ SUBSTRING(CURRENT_TIME, 1, 5) AS `hh:mm`,
+ SUBSTRING(CURRENT_TIME, 1, 2) AS `hh`,
+ SUBSTRING(CURRENT_TIME, 4, 2) AS `mm`,
+ SUBSTRING(CURRENT_TIME, 7, 2) AS `ss`;
++--------------+-------+------+------+------+
+| CURRENT_TIME | hh:mm | hh   | mm   | ss   |
++--------------+-------+------+------+------+
+| 18:46:30     | 18:46 | 18   | 46   | 30   |
++--------------+-------+------+------+------+
+
+
+ SUBSTRING(CURRENT_TIMESTAMP, 1, 10) AS `yyyy-mm-dd`,
+ SUBSTRING(CURRENT_TIMESTAMP, 1, 4) AS `yyyy`,
+ SUBSTRING(CURRENT_TIMESTAMP, 3, 2) AS `yy`,
+ SUBSTRING(CURRENT_TIMESTAMP, 6, 2) AS `mm`,
+ SUBSTRING(CURRENT_TIMESTAMP, 9, 2) AS `dd`,
+ SUBSTRING(CURRENT_TIMESTAMP, 12, 5) AS `hh:mm`,
+ SUBSTRING(CURRENT_TIMESTAMP, 12, 2) AS `hh`,
+ SUBSTRING(CURRENT_TIMESTAMP, 15, 2) AS `mm`,
+ SUBSTRING(CURRENT_TIMESTAMP, 18, 2) AS `ss`;
++---------------------+------------+------+------+------+------+-------+------+------+------+
+| CURRENT_TIMESTAMP   | yyyy-mm-dd | yyyy | yy   | mm   | dd   | hh:mm | hh   | mm   | ss   |
++---------------------+------------+------+------+------+------+-------+------+------+------+
+| 2022-09-20 18:46:36 | 2022-09-20 | 2022 | 22   | 09   | 20   | 18:46 | 18   | 46   | 36   |
++---------------------+------------+------+------+------+------+-------+------+------+------+
+
