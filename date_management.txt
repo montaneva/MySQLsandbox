@@ -22,6 +22,7 @@ SELECT CURRENT_TIME,
 +--------------+-------+------+------+------+
 
 
+SELECT CURRENT_TIMESTAMP,
  SUBSTRING(CURRENT_TIMESTAMP, 1, 10) AS `yyyy-mm-dd`,
  SUBSTRING(CURRENT_TIMESTAMP, 1, 4) AS `yyyy`,
  SUBSTRING(CURRENT_TIMESTAMP, 3, 2) AS `yy`,
